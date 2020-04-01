@@ -1,0 +1,1 @@
+A simple application that uses an H2 Database, creating a file for storage, rather than being too simply an in-memory database.
