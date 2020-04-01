@@ -10,5 +10,15 @@ spring:
       path: /data
       trace: true
       web-allow-others: false
+  flyway:
+    enabled: true
+    baseline-version: 0
+    baseline-on-migrate: true
+    schemas: billionaires
+    table: schema_version
+    validate-on-migrate: false
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        default_schema: billionaires
